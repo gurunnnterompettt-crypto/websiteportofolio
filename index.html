@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Muhammad Syahrul Majid As Shidiq - Programmer / Web Developer">
+  <title>Syahrul.dev | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">&lt;Syahrul<span>.dev</span>/&gt;</a>
+    <button class="menu-toggle" aria-label="Buka menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">PROGRAMMER / WEB DEVELOPER</p>
+        <h1>Halo, saya <span>Muhammad Syahrul Majid As Shidiq</span></h1>
+        <p class="hero-text">Pelajar kelas XI TJKT 2 yang tertarik pada pemrograman, pengembangan website, dan teknologi digital.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">Lihat Project</a>
+          <a class="btn secondary" href="#contact">Hubungi Saya</a>
+        </div>
+      </div>
+      <div class="code-card">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <pre><code><span class="purple">const</span> developer = {
+  name: <span class="green">"Syahrul"</span>,
+  class: <span class="green">"XI TJKT 2"</span>,
+  role: <span class="green">"Web Developer"</span>,
+  passion: <span class="green">"Coding"</span>
+};
+
+<span class="blue">developer</span>.build<span class="yellow">();</span></code></pre>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-title"><span>01.</span> Tentang Saya</div>
+      <div class="about-grid">
+        <div>
+          <h2>Membangun ide menjadi website.</h2>
+          <p>Saya adalah siswa <strong>Muhammad Syahrul Majid As Shidiq</strong> dari kelas <strong>XI TJKT 2</strong> dengan nomor absen <strong>15</strong>. Saya senang mempelajari bagaimana website dibuat dari HTML, CSS, dan JavaScript.</p>
+          <p>Portofolio ini menjadi ruang untuk menampilkan proses belajar, project, kemampuan teknis, dan minat saya di bidang teknologi.</p>
+        </div>
+        <div class="info-card">
+          <div><span>Nama</span><strong>Muhammad Syahrul Majid As Shidiq</strong></div>
+          <div><span>Kelas</span><strong>XI TJKT 2</strong></div>
+          <div><span>Absen</span><strong>15</strong></div>
+          <div><span>Fokus</span><strong>Web Development</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="section-title"><span>02.</span> Skills</div>
+      <div class="skills-grid">
+        <article class="skill"><b>HTML5</b><p>Struktur halaman web yang semantik dan terorganisir.</p><div class="bar"><i style="width:90%"></i></div></article>
+        <article class="skill"><b>CSS3</b><p>Layout, responsive design, animasi, dan visual modern.</p><div class="bar"><i style="width:85%"></i></div></article>
+        <article class="skill"><b>JavaScript</b><p>Membuat website interaktif dan dinamis.</p><div class="bar"><i style="width:75%"></i></div></article>
+        <article class="skill"><b>Git / GitHub</b><p>Dasar version control dan pengelolaan project.</p><div class="bar"><i style="width:65%"></i></div></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-title"><span>03.</span> Project</div>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-number">01</div>
+          <h3>Website Portofolio</h3>
+          <p>Website portofolio personal dengan desain modern, responsive, dan navigasi interaktif.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project">
+          <div class="project-number">02</div>
+          <h3>Aplikasi Kasir Sederhana</h3>
+          <p>Web app untuk menghitung total belanja, diskon, dan pembayaran secara otomatis.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </article>
+        <article class="project">
+          <div class="project-number">03</div>
+          <h3>Landing Page Kreatif</h3>
+          <p>Konsep landing page modern untuk memperkenalkan produk atau layanan digital.</p>
+          <div class="tags"><span>UI</span><span>Responsive</span><span>CSS</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section quote">
+      <p>“Code today. Create tomorrow.”</p>
+      <span>— Muhammad Syahrul Majid As Shidiq</span>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-title"><span>04.</span> Kontak</div>
+      <h2>Mari terhubung.</h2>
+      <p>Punya ide project atau ingin berdiskusi tentang teknologi? Silakan kirim pesan melalui form berikut.</p>
+      <form id="contactForm">
+        <input id="name" type="text" placeholder="Nama kamu" required>
+        <input id="email" type="email" placeholder="Email kamu" required>
+        <textarea id="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+        <button class="btn primary" type="submit">Kirim Pesan</button>
+      </form>
+      <p id="formStatus" class="status"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Muhammad Syahrul Majid As Shidiq • XI TJKT 2 • Absen 15</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
